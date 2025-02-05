@@ -9,6 +9,7 @@ public class LeapYear {
 		System.out.print("Enter any year:- ");
 		int year = sc.nextInt();
 		sc.close();
+		
 		if (year%100==0 && year%400==0) {
 			System.out.println(year +" is a Leap year");
 		}
@@ -17,8 +18,12 @@ public class LeapYear {
 		}
 		else {
 			System.out.println(year +" is not a Leap year");
-
 		}
+
+		//we can combine the conditions to make it shorter. i.e...
+		//if((year % 100 != 0 && year % 4 == 0) || year % 400 == 0){}
+		
+		
 	}
 
 }
