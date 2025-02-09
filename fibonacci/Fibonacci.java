@@ -24,6 +24,8 @@ public class Fibonacci {
 			f2 = f3;
 			count++;
 		}
+
+		sc.close();
 	}
 
 }
